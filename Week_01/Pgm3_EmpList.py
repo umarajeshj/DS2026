@@ -4,5 +4,5 @@ for i in range(0,len(employees)):
 
 #with enumerate()
 print("Using enumerate()") 
-for emp in enumerate(employees):
-    print(emp)
+for i, emp in enumerate(employees):
+    print(i+1,".",emp)
