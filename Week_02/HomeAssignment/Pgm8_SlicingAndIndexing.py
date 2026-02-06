@@ -4,3 +4,5 @@ print("Every 2nd number from beginning  :",prime_numbers[0::2])
 print("Negative indexing last 3 numbers :",prime_numbers[-3:])
 print("Reverse list                     :",prime_numbers[::-1])
 print("Descending order                 :",prime_numbers[::-1])
+
+#reverse --, .reverse() or prime_numbers.sort(reverse=True)

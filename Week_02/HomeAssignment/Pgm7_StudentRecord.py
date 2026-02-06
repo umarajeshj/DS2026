@@ -8,6 +8,7 @@ class Student:
         print(f"Name  : {self.name}    | Grade : {self.grade}   | Department : {self.department}")
 
     def update_grade(self,new_grade):
+        new_grade = input("Enter new grade :")
         self.grade = new_grade
 
 #Create student list
