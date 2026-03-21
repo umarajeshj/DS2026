@@ -1,0 +1,14 @@
+plt.figure(figsize=(10, 8))
+sns.heatmap(corr_matrix, 
+            annot=True,      # Displays the correlation numbers in each cell
+            cmap='coolwarm', # Color scale: Red (positive), Blue (negative)
+            fmt=".2f",       # Rounds numbers to 2 decimal places
+            linewidths=0.5)  # Adds slight spacing between squares
+
+plt.title('Correlation Heatmap of Employee Features')
+plt.show()
+
+sns.pairplot(df[target_features], corner=True)    
+
+plt.suptitle('Pairplot of Employee Features by Department', y=1.02)
+plt.show()

@@ -49,16 +49,16 @@ plt.legend()
 plt.show()
 # -->more distance-->more discount--to promote far away customers/delivery fee
 
-#7.MULTIVARIATE – Happy Customers: Find 3 orders where Rating = 5. 
+#7.MULTIVARIATE – Happy Customers: Find 3 orders where Rating = 5. pairplot
 happy_orders = df[df['Rating'] == 5].head(3)
 print(happy_orders[['Order', 'Distance', 'Delivery Time', 'Order Amount']])
 # -->less distance as delivery time is less/consistent order amount
 
-#8.Unhappy Customers: Find 3 orders where Rating = 1.
+#8.Unhappy Customers: Find 3 orders where Rating = 1. pairplot
 unhappy_orders = df[df['Rating'] == 1].head(3)
 print(unhappy_orders[['Order', 'Distance', 'Delivery Time', 'Order Amount']])
 
-#9.CORRELATION TYPE – Write Positive, Negative, or No Correlation for each pair:    
+#9.CORRELATION TYPE – Write Positive, Negative, or No Correlation for each pair:  Seaborn chart  
 corr_a = df['Distance'].corr(df['Delivery Time'])
 corr_b = df['Distance'].corr(df['Rating'])
 corr_c = df['Items Ordered'].corr(df['Order Amount'])
