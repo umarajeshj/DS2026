@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('Week09_ScalarTech/scaling_homework_dataset_100_rows.csv')
 #1 Min,Max,Mean,Std values for Age,Exp,Salary,PerfScore,Bonus
+#target variable -->Bonus
+#Features -->Age,Exp,Salary,Perf
+
 target_features = ['Age','Experience','Salary','PerformanceScore','Bonus']
 
 # Check and print the count of missing values (NaN)
